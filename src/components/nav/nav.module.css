@@ -1,0 +1,42 @@
+.nav {
+  margin: 42px 0px;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+}
+
+.link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  border: 1px solid #7F7F7F;
+  border-radius: 8px;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18px;
+}
+
+.mode {
+  border: 1px solid #7F7F7F;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+}
