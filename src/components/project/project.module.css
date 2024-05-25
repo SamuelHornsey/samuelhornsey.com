@@ -1,0 +1,75 @@
+.project {
+  border-radius: 30px;
+  border: solid 1px #7f7f7f;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+
+  .title {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+
+    .titleLink {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  .about {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a9a9a9;
+  }
+
+  .status {
+    font-size: 10px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #e785ff;
+    margin: 0px;
+    margin-top: 12px;
+    margin-bottom: 22px;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: solid 1px #7f7f7f;
+    background-color: #3d3d3d;
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .link:hover {
+    background-color: #7d7d7d;
+
+  }
+}
