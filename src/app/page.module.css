@@ -1,9 +1,10 @@
 @value tablet-sm-portrait from "@/app/breakpoints.module.css";
 @value phone-lg-portrait from "@/app/breakpoints.module.css";
+@value phone-sm-portrait from "@/app/breakpoints.module.css";
 
 .header {
   margin-top: 100px;
-  
+
   .title {
     margin: 0px;
     padding: 0px;
@@ -18,13 +19,19 @@
     color: var(--fg-color);
 
     .purple {
-      color: #E785FF;
+      color: #e785ff;
     }
   }
 
   @media (tablet-sm-portrait) {
     .title {
       font-size: 52px;
+    }
+  }
+
+  @media (phone-sm-portrait) {
+    .title {
+      font-size: 44px;
     }
   }
 

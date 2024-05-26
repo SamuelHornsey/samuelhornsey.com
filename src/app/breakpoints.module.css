@@ -5,3 +5,5 @@
 @value tablet-sm-portrait: max-width: 768px;
 
 @value phone-lg-portrait: max-width: 480px;
+
+@value phone-sm-portrait: max-width: 370px;

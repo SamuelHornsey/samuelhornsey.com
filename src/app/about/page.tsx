@@ -14,7 +14,7 @@ export default function Home() {
       <Nav></Nav>
 
       <Section className={styles.header}>
-      <div className={styles.container}>
+        <div className={styles.container}>
           <h2 className={styles.heading}>About Me</h2>
 
           <p className={styles.text}>
@@ -52,37 +52,37 @@ export default function Home() {
       </Section>
 
       <Section className={styles.projects}>
-          <h2 className={styles.heading}>My Projects</h2>
+        <h2 className={styles.heading}>My Projects</h2>
 
-          <div className={styles.grid}>
-            <Project
-              link="https://github.com/SamuelHornsey/samuelhornsey.com"
-              status={status.PROGRESS}
-              name="samuelhornsey.com"
-              about="Personal Website"
-            />
+        <div className={styles.grid}>
+          <Project
+            link="https://github.com/SamuelHornsey/samuelhornsey.com"
+            status={status.PROGRESS}
+            name="samuelhornsey.com"
+            about="Personal Website"
+          />
 
-            <Project
-              link="https://github.com/SamuelHornsey/scorm-promised"
-              status={status.COMPLETED}
-              name="scorm-promised"
-              about="Scorm API promise wrapper"
-            />
+          <Project
+            link="https://github.com/SamuelHornsey/scorm-promised"
+            status={status.COMPLETED}
+            name="scorm-promised"
+            about="Scorm API promise wrapper"
+          />
 
-            <Project
-              link="https://github.com/SamuelHornsey/fluxt"
-              status={status.PROGRESS}
-              name="fluxt"
-              about="Python stateful streaming"
-            />
+          <Project
+            link="https://github.com/SamuelHornsey/fluxt"
+            status={status.PROGRESS}
+            name="fluxt"
+            about="Python stateful streaming"
+          />
 
-            <Project
-              link="https://github.com/SamuelHornsey/brutalist-notes"
-              status={status.COMPLETED}
-              name="brutalist-notes"
-              about="A really bad notes app"
-            />
-          </div>
+          <Project
+            link="https://github.com/SamuelHornsey/brutalist-notes"
+            status={status.COMPLETED}
+            name="brutalist-notes"
+            about="A really bad notes app"
+          />
+        </div>
       </Section>
 
       <Footer></Footer>

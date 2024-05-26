@@ -1,5 +1,6 @@
 @value tablet-sm-portrait from "@/app/breakpoints.module.css";
 @value phone-lg-portrait from "@/app/breakpoints.module.css";
+@value phone-sm-portrait from "@/app/breakpoints.module.css";
 
 .header {
   margin-top: 95px;
@@ -13,6 +14,12 @@
     letter-spacing: normal;
     text-align: left;
     color: var(--fg-color);
+  }
+
+  @media (phone-lg-portrait) {
+    .heading {
+      font-size: 40px;
+    }
   }
 
   .text {
@@ -29,7 +36,12 @@
   @media (phone-lg-portrait) {
     .text {
       font-size: 18px;
+    }
+  }
 
+  @media (phone-sm-portrait) {
+    .text {
+      font-size: 14px;
     }
   }
 
@@ -80,6 +92,12 @@
       letter-spacing: normal;
       text-align: left;
       color: var(--fg-color);
+    }
+
+    @media (phone-lg-portrait) {
+      .heading {
+        font-size: 40px;
+      }
     }
   }
 }
