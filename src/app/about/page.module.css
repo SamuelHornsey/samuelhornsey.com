@@ -1,10 +1,8 @@
+@value tablet-sm-portrait from "@/app/breakpoints.module.css";
+@value phone-lg-portrait from "@/app/breakpoints.module.css";
+
 .header {
   margin-top: 95px;
-
-  .container {
-    width: 50%;
-    margin: auto;
-  }
 
   .heading {
     font-size: 48px;
@@ -14,7 +12,7 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    color: #fff;
+    color: var(--fg-color);
   }
 
   .text {
@@ -25,7 +23,20 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    color: #d3d3d3;
+    color: var(--text-color);
+  }
+
+  @media (phone-lg-portrait) {
+    .text {
+      font-size: 18px;
+
+    }
+  }
+
+  @media (phone-lg-portrait) {
+    .list {
+      padding-inline-start: 22px;
+    }
   }
 
   .highlight {
@@ -40,7 +51,7 @@
   }
 }
 
-.section {
+.projects {
   margin-top: 60px;
 
   .container {
@@ -48,21 +59,27 @@
     margin: auto;
   }
 
-  .projects {
+  .grid {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 30px;
     row-gap: 30px;
   }
 
-  .heading {
-    font-size: 48px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
+  @media (tablet-sm-portrait) {
+    .grid {
+      grid-template-columns: auto;
+    }
+
+    .heading {
+      font-size: 48px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--fg-color);
+    }
   }
 }

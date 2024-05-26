@@ -1,15 +1,16 @@
+@value phone-lg-portrait from "@/app/breakpoints.module.css";
+
 .nav {
   margin: 42px 0px;
+  display: flex;
 }
 
 .container {
-  width: 50%;
-  margin: auto;
   display: flex;
 }
 
 .link {
-  color: #FFFFFF;
+  color: var(--fg-color);
   text-decoration: none;
   font-family: var(--font-inter);
   font-size: 12px;
@@ -29,9 +30,17 @@
   margin-right: 18px;
 }
 
+@media (phone-lg-portrait) {
+  .link {
+    font-size: 10px;
+    width: 50px;
+    margin-right: 8px;
+  }
+}
+
 .link:hover {
   border: 1px solid #9f9f9f;
-  background-color: #595959;
+  background-color: var(--btn-highlight);
 }
 
 .mode {
@@ -48,5 +57,5 @@
 
 .mode:hover {
   border: 1px solid #9f9f9f;
-  background-color: #595959;
+  background-color: var(--btn-highlight);
 }

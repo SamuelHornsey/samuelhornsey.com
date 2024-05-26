@@ -12,7 +12,7 @@
       font-weight: 700;
       font-size: 12px;
       line-height: 19px;
-      color: #FFFFFF;
+      color: var(--fg-color);
     }
   }
 }

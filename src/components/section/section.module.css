@@ -1,0 +1,26 @@
+@value tablet-landscape from "@/app/breakpoints.module.css";
+@value tablet-portrait from "@/app/breakpoints.module.css";
+@value phone-lg-portrait from "@/app/breakpoints.module.css";
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+@media (tablet-landscape) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media (tablet-portrait) {
+  .container {
+    width: 65%;
+  }
+}
+
+@media (phone-lg-portrait) {
+  .container {
+    width: 80%;
+  }
+}

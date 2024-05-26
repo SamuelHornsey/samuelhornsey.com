@@ -1,0 +1,7 @@
+@value tablet-landscape: max-width: 1366px;
+
+@value tablet-portrait: max-width: 1024px;
+
+@value tablet-sm-portrait: max-width: 768px;
+
+@value phone-lg-portrait: max-width: 480px;

@@ -17,7 +17,7 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    color: #fff;
+    color: var(--fg-color);
   }
 
   .content {
