@@ -29,7 +29,6 @@ export default function Home() {
             projects, including this website and my blog. Take a look around to
             check out my work and skills.
           </p>
-          <p className={styles.text}>"My other computer is the cloud" ☁️</p>
         </div>
 
         <div className={styles.container}>
