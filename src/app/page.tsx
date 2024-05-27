@@ -66,6 +66,18 @@ export default function Home() {
             stars={3}
             skill="Azure"
           />
+
+          <Skill
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg"
+            stars={3}
+            skill="Ansible"
+          />
+
+          <Skill
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"
+            stars={4}
+            skill="Kubernetes"
+          />
         </div>
       </Section>
 

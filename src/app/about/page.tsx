@@ -81,6 +81,18 @@ export default function Home() {
             name="brutalist-notes"
             about="A really bad notes app"
           />
+          <Project
+            link="https://github.com/SamuelHornsey/js-stateful"
+            status={status.COMPLETED}
+            name="js-stateful"
+            about="A vanilla js state manager"
+          />
+          <Project
+            link="https://github.com/SamuelHornsey/javascript-router"
+            status={status.COMPLETED}
+            name="javascript-router"
+            about="Vanilla js router"
+          />
         </div>
       </Section>
 
