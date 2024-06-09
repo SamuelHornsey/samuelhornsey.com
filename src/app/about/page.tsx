@@ -97,16 +97,16 @@ export default function Home() {
 
           <ul className={styles.text}>
             <li>
-              <Link className={styles.link} href="/">Linkedin</Link>
+              <Link className={styles.link} href="https://www.linkedin.com/in/samuel-hornsey/" target="_blank">Linkedin</Link>
             </li>
             <li>
-              <Link className={styles.link} href="/">Github</Link>
+              <Link className={styles.link} href="https://github.com/SamuelHornsey" target="_blank">Github</Link>
             </li>
             <li>
-              <Link className={styles.link} href="/">Twitter (X)</Link>
+              <Link className={styles.link} href="https://twitter.com/SamHornsey" target="_blank">Twitter (X)</Link>
             </li>
             <li>
-              <Link className={styles.link} href="/">Instagram</Link>
+              <Link className={styles.link} href="https://www.instagram.com/sam.hornsey/" target="_blank">Instagram</Link>
             </li>
           </ul>
         </div>
