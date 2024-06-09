@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Nav from "@/components/nav/nav";
 import Footer from "@/components/footer/footer";
@@ -32,18 +33,6 @@ export default function Home() {
         </div>
 
         <div className={styles.container}>
-          <h2 className={styles.heading}>Highlights</h2>
-
-          <ul className={`${styles.list} ${styles.text}`}>
-            <li>💻 DevOps Engineer from Australia</li>
-            <li>🌐 I develop technology for the web</li>
-            <li>☁️ My other computer is the cloud</li>
-            <li>🏫 Learning C++, Golang and Data Science</li>
-            <li>🚴‍♂️ Usually on my bike</li>
-          </ul>
-        </div>
-
-        <div className={styles.container}>
           <div className={styles.profile}>
             <Image src={profile} alt="Profile" />
           </div>
@@ -62,6 +51,20 @@ export default function Home() {
           />
 
           <Project
+            link="https://github.com/SamuelHornsey/blog.codeordie.co"
+            status={status.PROGRESS}
+            name="blog.codeordie.co"
+            about="Code Or Die Bloggggggg."
+          />
+
+          <Project
+            link="https://github.com/SamuelHornsey/notes.samuelhornsey.com"
+            status={status.COMPLETED}
+            name="notes.samuelhornsey.com"
+            about="A really bad notes app"
+          />
+
+          <Project
             link="https://github.com/SamuelHornsey/scorm-promised"
             status={status.COMPLETED}
             name="scorm-promised"
@@ -76,23 +79,36 @@ export default function Home() {
           />
 
           <Project
-            link="https://github.com/SamuelHornsey/brutalist-notes"
-            status={status.COMPLETED}
-            name="brutalist-notes"
-            about="A really bad notes app"
-          />
-          <Project
-            link="https://github.com/SamuelHornsey/js-stateful"
-            status={status.COMPLETED}
-            name="js-stateful"
-            about="A vanilla js state manager"
-          />
-          <Project
             link="https://github.com/SamuelHornsey/javascript-router"
             status={status.COMPLETED}
             name="javascript-router"
             about="Vanilla js router"
           />
+        </div>
+      </Section>
+
+      <Section className={styles.contact}>
+        <div className={styles.container}>
+          <h2 className={styles.heading}>Contact</h2>
+
+          <p className={styles.text}>
+            You can contact me <a className={styles.email} href="mailto:me@samuelhornsey.com">here</a> or reach out at any of the place below.
+          </p>
+
+          <ul className={styles.text}>
+            <li>
+              <Link className={styles.link} href="/">Linkedin</Link>
+            </li>
+            <li>
+              <Link className={styles.link} href="/">Github</Link>
+            </li>
+            <li>
+              <Link className={styles.link} href="/">Twitter (X)</Link>
+            </li>
+            <li>
+              <Link className={styles.link} href="/">Instagram</Link>
+            </li>
+          </ul>
         </div>
       </Section>
 

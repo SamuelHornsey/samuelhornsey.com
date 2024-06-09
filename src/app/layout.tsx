@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Samuel Hornsey",
   description: "Personal Website",
+  icons: {
+    icon: '/favicon.ico' // /public path
+  }
 };
 
 export default function RootLayout({

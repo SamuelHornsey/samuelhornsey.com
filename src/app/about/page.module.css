@@ -24,7 +24,7 @@
 
   .text {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -53,6 +53,7 @@
 
   .highlight {
     color: #e785ff;
+    font-weight: 800;
   }
 
   .profile {
@@ -73,9 +74,20 @@
 
   .grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     row-gap: 30px;
+  }
+
+  .heading {
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--fg-color);
   }
 
   @media (tablet-sm-portrait) {
@@ -83,6 +95,72 @@
       grid-template-columns: auto;
     }
 
+    .heading {
+      font-size: 48px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--fg-color);
+    }
+
+    @media (phone-lg-portrait) {
+      .heading {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.contact {
+  margin-top: 80px;
+
+  .heading {
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--fg-color);
+  }
+
+  .text {
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--text-color);
+  }
+
+  @media (phone-lg-portrait) {
+    .text {
+      font-size: 18px;
+    }
+  }
+
+  @media (phone-sm-portrait) {
+    .text {
+      font-size: 14px;
+    }
+  }
+
+  .email {
+    color: #e785ff;
+    font-weight: 800;
+  }
+
+  .link {
+    color: var(--text-color);
+  }
+
+  @media (tablet-sm-portrait) {
     .heading {
       font-size: 48px;
       font-weight: bold;
