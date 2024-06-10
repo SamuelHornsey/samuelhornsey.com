@@ -60,7 +60,7 @@ export default function Home() {
           <Project
             link="https://github.com/SamuelHornsey/notes.samuelhornsey.com"
             status={status.COMPLETED}
-            name="notes.samuelhornsey.com"
+            name="bad-notes-app"
             about="A really bad notes app"
           />
 

@@ -1,3 +1,6 @@
+@value phone-sm-portrait from "@/app/breakpoints.module.css";
+
+
 .project {
   border-radius: 30px;
   border: solid 1px #7f7f7f;
@@ -22,6 +25,12 @@
     }
   }
 
+  @media (phone-sm-portrait) {
+    .title {
+      font-size: 16px;
+    }
+  }
+
   .about {
     margin: 0px;
     font-size: 14px;
@@ -32,6 +41,12 @@
     letter-spacing: normal;
     text-align: left;
     color: #a9a9a9;
+  }
+
+  @media (phone-sm-portrait) {
+    .about {
+      font-size: 12px;
+    }
   }
 
   .status {
