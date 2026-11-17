@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { Icon } from "@dev.icons/react/mono";
 
 import star from "./star.png";
 import styles from "./skill.module.css";
 
 interface props {
-  src: string;
+  src: React.ReactNode;
   stars: number;
   skill: string;
 }
@@ -13,7 +14,7 @@ export default function Skill(props: props) {
   return (
     <div className={styles.skill}>
       <div className={styles.container}>
-        <Image src={props.src} alt="Skill" width="60" height="60" />
+        { props.src }
 
         <div className={styles.content}>
           <h4 className={styles.heading}>{props.skill}</h4>

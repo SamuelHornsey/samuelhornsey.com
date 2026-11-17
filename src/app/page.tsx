@@ -1,3 +1,17 @@
+import { Aws } from "@dev.icons/react/mono";
+import {
+  Python,
+  Javascript,
+  TypescriptIcon,
+  NodejsIcon,
+  _React,
+  NextjsIcon,
+  Ansible,
+  MicrosoftAzure,
+  Kubernetes,
+  Go,
+} from "@dev.icons/react";
+
 import Nav from "@/components/nav/nav";
 import Skill from "@/components/skill/skill";
 import Footer from "@/components/footer/footer";
@@ -17,7 +31,7 @@ export default function Home() {
         </p>
 
         <p className={styles.content}>
-          I am an experienced Software and DevOps Engineer. I love cloud,
+          I am an experienced Software and Platform Engineer. I love cloud,
           coding, automation and data.
         </p>
       </Section>
@@ -27,54 +41,52 @@ export default function Home() {
 
         <div className={styles.grid}>
           <Skill
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+            src={<Python size={60} alt="Skill" />}
             stars={5}
             skill="Python Development"
           />
           <Skill
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+            src={<Javascript size={60} alt="Skill" />}
             stars={5}
             skill="Javascript Development"
           />
           <Skill
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+            src={<TypescriptIcon size={60} alt="Skill" />}
             stars={4}
             skill="Typescript Development"
           />
           <Skill
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+            src={<Go size={60} alt="Skill" />}
+            stars={3}
+            skill="Golang Development"
+          />
+          <Skill
+            src={<NodejsIcon size={60} alt="Skill" />}
             stars={4}
             skill="NodeJS Development"
           />
           <Skill
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            src={<_React size={60} alt="Skill" />}
             stars={4}
             skill="ReactJS"
           />
           <Skill
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+            src={<NextjsIcon size={60} alt="Skill" />}
             stars={3}
             skill="NextJS"
           />
           <Skill
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+            src={<Aws size={60} alt="Skill" />}
             stars={4}
             skill="Amazon Web Services"
           />
           <Skill
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+            src={<MicrosoftAzure size={60} alt="Skill" />}
             stars={3}
             skill="Azure"
           />
-
           <Skill
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg"
-            stars={3}
-            skill="Ansible"
-          />
-
-          <Skill
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"
+            src={<Kubernetes size={60} alt="Skill" />}
             stars={4}
             skill="Kubernetes"
           />
